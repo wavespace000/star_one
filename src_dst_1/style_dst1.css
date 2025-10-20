@@ -1,0 +1,362 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+
+    }
+
+    /* Jumbotron */
+    
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      position: sticky; /* nempel di atas saat scroll */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      color:white /* warna netral minimalis */
+    }
+
+
+    .navbar .logo {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      color:white /* warna netral minimalis */
+    }
+
+    /* Hilangkan efek default link di dalam logo */
+    .navbar .logo a {
+      text-decoration: none; /* hilangkan garis bawah */
+      color: inherit;        /* gunakan warna dari .logo (yaitu putih) */
+    }
+    
+    /* Pastikan hover, active, visited tetap sama */
+    .navbar .logo a:hover,
+    .navbar .logo a:active,
+    .navbar .logo a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    
+    .navbar .logo span {
+      font-size: 0.7em;   /* lebih kecil dari teks utama */
+      font-weight: 400;   /* tipis agar kontras */
+      opacity: 0.7;       /* sedikit transparan */
+      margin-left: 2px;   /* beri jarak kecil */
+    }
+    .navbar .gif-icon {
+      width: 40px;      /* kecil, minimalis */
+      height: auto;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .gif-icon {
+      max-width: 30px;   /* ukuran maksimum */
+      height: auto;      /* biar proporsional */
+      
+    }
+
+    .gif1-icon{
+      height: 90%;      /* biar proporsional */
+      width: auto;
+      display: block;
+    }
+    .gif2-icon{
+      height: 150px;      /* biar proporsional */
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gif3-icon{
+        height: 150px;
+        width: 100%;
+        background-color: beige;
+    }
+    .btn-text{
+        font-family: 'cinzel', serif;
+    }
+    /* Dropdown container */
+    .dropdown {
+    width: 100%;
+
+    }
+
+    /* Tombol dropdown */
+    .dropbtn {
+    background-color: #7bdddd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 1001;
+
+    /* Atur tinggi tombol sesuai keinginan */
+    height: clamp(40px, 5vw, 43px); /* min 25px, ideal 5% layar, max 50px */                 /* tinggi tombol */
+    padding: 0px 5px;              /* jarak kiri-kanan */
+    display: flex;
+    align-items: center;             /* teks vertikal di tengah */
+    justify-content: space-between;  /* elemen pertama kiri, terakhir kanan */
+    font-size: 1.2rem;
+    border-radius: 5px;           /* opsional */
+    }
+
+    .arrow {
+    font-size: 0.8rem;
+    }
+    
+    /* Konten dropdown */
+    .dropdown-content {
+    display: none;
+    
+    width: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+    box-sizing: border-box;
+    
+    max-height: 300px; /* tinggi maksimal dropdown */
+    overflow-y: auto; /* muncul scroll jika konten lebih tinggi */
+    }
+
+    /* Link di dropdown */
+    .dropdown-content a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    /* Sticky class saat dropdown terbuka */
+    
+  
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%; /* langsung di bawah navbar */
+        right: 0;
+        width: 200px;
+        margin: 0;
+        padding: 0; /* kita atur padding tiap li */
+        border-radius: 5px; /* opsional, agar rapi */
+        overflow: hidden;   /* pastikan border-radius terlihat */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* opsional */
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .dropbtn {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    }
+    .dropdown-content a {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+    }
+
+    /* Konten */
+    .content {
+        padding: 5px 0px;   /* ada jarak dalam */
+        min-height: 900px;
+        background: #f4f4f4;
+        max-width: 1000px;    /* batasi lebar maksimal */
+        margin: 0 auto;       /* otomatis tengah */
+        box-sizing: border-box;
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+    }
+
+    .content h2 {
+      font-size: clamp(1rem, 1.5vw, 1.2rem); /* lebih kecil dan proporsional */
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+    
+    .content p {
+      font-size: clamp(0.9rem, 1.2vw, 1rem);  /* lebih compact, nyaman dibaca */
+      line-height: 1.5;  /* jarak antar baris pas */
+      margin-bottom: 1rem;
+      text-align: justify;
+     
+      margin: 0 2rem 1rem 2rem; /* atas 0, kanan 1.5rem, bawah 1rem, kiri 1.5rem */
+    }
+    .paragraf2 p {
+      font-size: clamp(0.9rem, 1.2vw, 1rem);  /* lebih compact, nyaman dibaca */
+      line-height: 1.5;  /* jarak antar baris pas */
+      margin-bottom: 1rem;
+      text-align: justify;
+      text-indent: 2em;
+      margin: 0 2rem 1rem 2rem; /* atas 0, kanan 1.5rem, bawah 1rem, kiri 1.5rem */
+    }
+    .img_p1 {
+    text-align: center;   /* isi di dalam div jadi rata tengah */
+    margin: 1.5rem auto 0.5rem auto;
+    }
+    .img_p1 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;           /* isi penuh container */
+    max-width: 500px;      /* tapi jangan lebih lebar dari 600px */
+    min-width: 250px;      /* jangan lebih kecil dari 250px */
+    height: auto;          /* biar proporsional */
+    border-radius: 6px;
+    
+    }
+
+    .nama_g p {
+        text-align: center;
+       
+    }
+
+    .penutup h2 {
+      font-size: clamp(1rem, 1.5vw, 1.2rem); /* lebih kecil dan proporsional */
+      margin: 1.5rem 2rem 0.5rem 2rem;
+      text-align: left;
+      border-bottom: 2px solid #ccc;
+
+    }
+    .penutup p {
+      font-size: clamp(0.9rem, 1.2vw, 1rem); /* lebih kecil dan proporsional */
+      margin: 0rem 2rem 2rem 2rem;
+      text-align: left;
+    }
+    .penutup2 p {
+      font-size: clamp(0.9rem, 1.2vw, 1rem);  /* lebih compact, nyaman dibaca */
+      line-height: 1.5;  /* jarak antar baris pas */
+      margin-bottom: 1rem;
+      text-align: justify;
+     
+      margin: 0 2rem 0.5rem 2rem; /* atas 0, kanan 1.5rem, bawah 1rem, kiri 1.5rem */
+    }
+
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+
+    
+    footer {
+      background-color: #333; /* sama dengan navbar */
+      color: white;           /* teks putih */
+      text-align: center;     /* rata tengah */
+      padding: 0.2vh 5vw;     /* jarak dalam */
+      font-size: 0.9rem;      /* sedikit lebih kecil dari konten */
+    }
+
+    footer a {
+      color: #ffd700;         /* warna link kontras (emas/kuning) */
+      text-decoration: none;
+      margin: 0 0px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;            /* berubah jadi putih saat hover */
+    }
+   
+/* comment------------------------------------- */
+    .comment-box {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+    }
+
+    .comment-box h2 {
+      font-size: clamp(1rem, 1.5vw, 1.2rem); /* lebih kecil dan proporsional */
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background: rgb(106, 166, 201);
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background: #5bc0c0;
+    }
+
+    #commentList {
+        margin-top: 20px;
+    }
+
+    .comment {
+        background: #f9f9f9;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+
+    .comment .author {
+        font-weight: bold;
+    }
+
+    .comment .datetime {
+        font-size: 0.85em;
+        color: #555;
+    }
+
+    .comment.author-reply {
+        border-left: 4px solid #7bdddd;
+        background: #e6f7f7;
+    }
