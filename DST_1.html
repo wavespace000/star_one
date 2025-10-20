@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Story</title>
+  <link rel="stylesheet" href="src_dst_1/style_dst1.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="https://wavespace000.netlify.app">WaveSpace</a><span>000</span></div>
+    <img src="src_dst_1/giphy.jpg" alt="animasi"class="gif-icon">
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="gif3-icon">
+        <img src="src_dst_1/D1.jpg" alt="animasi"class="gif2-icon">
+    </div>
+    <div class="dropdown" id="dropdownContainer">
+        <button class="dropbtn" onclick="toggleDropdown()">
+            <img src="src_dst_1/giphy1.gif" alt="animasi"class="gif1-icon">
+            <span class="btn-text">Data Story</span>
+            <span class="arrow">▼</span>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="https://wavespace000.netlify.app/DST_1.html">&#8226; Data Mengungkap: Hubungan Jumlah Kehamilan dan Risiko Diabetes</a>
+          <a href="https://wavespace000.netlify.app/DST_2.html" target="_blank">&#8226; Data Mengungkap: Faktor – Faktor Utama Penyebab Stres Pada Pelajar</a>
+     
+        </div>
+      </div>
+      <h2>Data Mengungkap: Hubungan Jumlah Kehamilan dan Risiko Diabetes</h2>
+      <div class="paragraf2">
+        <p> Kehamilan membawa kebahagiaan bagi setiap wanita, namun juga berpotensi meningkatkan risiko penyakit tertentu seperti diabetes. 
+            Berdasarkan data dari National Institute of Diabetes and Digestive and Kidney Diseases, dengan seluruh responden adalah perempuan suku Indian Pima berusia minimal 21 tahun. 
+            Dari data tersebut diketahui bahwa rata-rata wanita yang terdiagnosis diabetes pernah hamil sebanyak 4,46 kali. 
+            Untuk memahami sebaran datanya lebih jelas, mari lihat visualisasi berikut.</p>
+      </div>
+      
+        <div class="img_p1">  <img src="src_dst_1/P1.png" alt="Gambar 1"></div>
+        <div class="nama_g"> <p><b>Figure 1.</b> Pregnancy Distribution by Diabetes Status</p></div>
+            <p>
+                Gambar 1 memperlihatkan perbedaan distribusi jumlah kehamilan antara wanita 
+                dengan dan tanpa diabetes. Pada kelompok tanpa diabetes, rata-rata 
+                jumlah kehamilan adalah 2,72 dengan median 2, dan sebagian besar berada pada 
+                rentang 1–4 kehamilan. Sebaliknya, pada kelompok dengan diabetes, rata-ratanya 
+                lebih tinggi yaitu 4,47 dengan median 3, serta rentang distribusi yang lebih lebar 
+                hingga 17 kehamilan. Hal ini memperlihatkan bahwa wanita dengan diabetes cenderung 
+                memiliki jumlah kehamilan lebih banyak, meskipun terdapat variasi yang cukup besar 
+                dalam data (standar deviasi 3,92). Meski jumlah kehamilan tampak berbeda, risiko diabetes 
+                dipengaruhi oleh lebih banyak faktor. Untuk itu, kami melakukan analisis lebih lanjut untuk 
+                melihat faktor mana saja yang paling berpengaruh signifikan, yang dapat dilihat dalam grafik berikut.
+            </p>
+        <div class="img_p1">  <img src="src_dst_1/P2.png" alt="Gambar 1"></div>
+        <div class="nama_g"> <p><b>Figure 2.</b> Factors Examined in Diabetes Risk Analysis</p></div>
+        <P>
+            Gambar 2 menunjukkan pengaruh masing-masing faktor terhadap risiko diabetes pada 
+            wanita. Dari analisis, kadar glukosa darah, BMI (Body Mass Index), 
+            dan Diabetes Pedigree Function menjadi faktor paling berpengaruh. Misalnya, 
+            setiap kenaikan 1 unit glukosa meningkatkan peluang diabetes sekitar 4%, sedangkan setiap 
+            kenaikan 1 unit BMI meningkatkan peluang sekitar 7%. Sementara itu, faktor seperti jumlah 
+            kehamilan, tekanan darah, dan usia tidak menunjukkan pengaruh signifikan terhadap risiko diabetes. Berdasarkan temuan ini, menjaga kadar gula dan BMI tetap dalam batas normal menjadi 
+            langkah sederhana namun penting untuk menurunkan risiko diabetes, 
+            sesuai rekomendasi dari Organisasi Kesehatan Dunia (WHO) yang menekankan pentingnya 
+            pola makan sehat dan pengendalian berat badan untuk mencegah diabetes.
+        </p>
+        <div class="penutup"><h2>Referensi</h2></div>
+        <div class="penutup2"><p> <i>Artikel ini disusun berdasarkan analisis penulis terhadap data yang diperoleh dari Pima Indians Diabetes Database </i></p></div>
+        <div class="penutup"><p>(https://www.kaggle.com/datasets/uciml/
+          pima-indians-
+          diabetes-database)</p></div>
+        
+        
+    </div>
+    <div class="comment-box">
+      <h2>Komentar</h2>
+      <input type="text" id="authorInput" placeholder="Nama...">
+      <textarea id="commentInput" placeholder="Tulis komentar..."></textarea>
+      <button onclick="addComment()">Kirim</button>
+      <div id="commentList"></div>
+    </div>
+  
+  
+  <footer>
+    <p>&copy; 2025 Taris</p>
+  </footer>
+  <script src="src_dst_1/sticky_mn.js"></script>
+  <script src="src_dst_1/up_comment.js"></script>
+</body>
+
+</html>
+

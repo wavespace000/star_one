@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Story</title>
+  <link rel="stylesheet" href="src_dst_2/style_dst2.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="https://wavespace000.netlify.app">WaveSpace</a><span>000</span></div>
+    <img src="src_dst_2/giphy.jpg" alt="animasi"class="gif-icon">
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="gif3-icon">
+        <img src="src_dst_2/D1.jpg" alt="animasi"class="gif2-icon">
+    </div>
+    <div class="dropdown" id="dropdownContainer">
+        <button class="dropbtn" onclick="toggleDropdown()">
+            <img src="src_dst_2/giphy1.gif" alt="animasi"class="gif1-icon">
+            <span class="btn-text">Data Story</span>
+            <span class="arrow">▼</span>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="https://wavespace000.netlify.app/DST_1.html">&#8226; Data Mengungkap: Hubungan Jumlah Kehamilan dan Risiko Diabetes</a>
+          <a href="https://wavespace000.netlify.app/DST_2.html" target="_blank">&#8226; Data Mengungkap: Faktor – Faktor Utama Penyebab Stres Pada Pelajar</a>
+     
+          
+        </div>
+      </div>
+      <h2>Data Mengungkap: Faktor – Faktor Utama Penyebab Stres Pada Pelajar</h2>
+      <div class="paragraf2">
+        <p> Sekolah bukan hanya menjadi 
+            tempat untuk mengasah kemampuan akademik, 
+            tetapi juga ruang bagi pelajar untuk mengenali 
+            potensi dan membentuk jati diri. Namun, 
+            dalam kondisi tertentu, tekanan dari lingkungan 
+            dapat memicu stres yang berpotensi menurunkan 
+            efektivitas proses belajar. Dalam artikel ini, 
+            penulis menggunakan data hasil survei terhadap 
+            pelajar dari berbagai jenjang pendidikan untuk 
+            menganalisis faktor-faktor yang memengaruhi 
+            tingkat stres pelajar. Faktor-faktor tersebut 
+            meliputi tekanan dari teman sebaya dan keluarga 
+            (Peer pressure & Academic pressure (home)) , 
+            lingkungan belajar (Study environtment), 
+            strategi menghadapi masalah (Your strategy), 
+            kebiasaan buruk (Bad habits), 
+            serta tingkat persaingan akademik 
+            yang dirasakan (Academic competition).</p>
+      </div>
+            <p>
+                Data yang digunakan dalam penelitian ini dikumpulkan 
+                melalui kuesioner daring pada tanggal 24 Juli 2025, 
+                dengan jumlah responden sebanyak 140 pelajar. 
+                Data tersebut kemudian dianalisis menggunakan model regresi 
+                untuk mengidentifikasi faktor-faktor yang memengaruhi 
+                tingkat stres di kalangan pelajar. Hasil analisis disajikan sebagai berikut:
+            </p>
+            
+            <div class="nama_g"> <p><b>Tabel 1. </b> Hasil Analisis Regresi Faktor-Faktor yang Mempengaruhi Tingkat Stres Pelajar</p></div>
+            <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Variabel</th>
+                      <th class="left">Coef</th>
+                      <th>Std. Err</th>
+                      <th>t</th>
+                      <th>P&gt;|t|</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>const</td>
+                      <td>-0.2214</td>
+                      <td>0.431</td>
+                      <td>-0.514</td>
+                      <td>0.608</td>
+                    </tr>
+                    <tr>
+                      <td>Your Academic Stage</td>
+                      <td>0.0706</td>
+                      <td>0.11</td>
+                      <td>0.642</td>
+                      <td>0.522</td>
+                    </tr>
+                    <tr class="significant">
+                      <td>Peer pressure</td>
+                      <td>0.2786</td>
+                      <td>0.073</td>
+                      <td>3.833</td>
+                      <td class="pval">&lt; 0.001</td>
+                    </tr>
+                    <tr class="significant">
+                      <td>Academic pressure (home)</td>
+                      <td>0.1795</td>
+                      <td>0.058</td>
+                      <td>3.096</td>
+                      <td class="pval">0.002</td>
+                    </tr>
+                    <tr>
+                      <td>Bad habits</td>
+                      <td>0.1376</td>
+                      <td>0.124</td>
+                      <td>1.108</td>
+                      <td>0.27</td>
+                    </tr>
+                    <tr>
+                      <td>Your_strategy_cat_0</td>
+                      <td>-0.0796</td>
+                      <td>0.179</td>
+                      <td>-0.444</td>
+                      <td>0.658</td>
+                    </tr>
+                    <tr>
+                      <td>Your_strategy_cat_1</td>
+                      <td>0.2907</td>
+                      <td>0.237</td>
+                      <td>1.229</td>
+                      <td>0.221</td>
+                    </tr>
+                    <tr>
+                      <td>Study_Environment_OR_1_0</td>
+                      <td>-0.0113</td>
+                      <td>0.179</td>
+                      <td>-0.063</td>
+                      <td>0.95</td>
+                    </tr>
+                    <tr>
+                      <td>Study_Environment_OR_1_1</td>
+                      <td>-0.1998</td>
+                      <td>0.173</td>
+                      <td>-1.155</td>
+                      <td>0.25</td>
+                    </tr>
+                    <tr>
+                      <td>Study_Environment_OR_1_2</td>
+                      <td>-0.0104</td>
+                      <td>0.181</td>
+                      <td>-0.057</td>
+                      <td>0.954</td>
+                    </tr>
+                    <tr class="significant">
+                      <td>Academic_competition</td>
+                      <td>1.2351</td>
+                      <td>0.347</td>
+                      <td>3.559</td>
+                      <td class="pval">0.001</td>
+                    </tr>
+                    <tr class="significant">
+                      <td>Academic_competition^2</td>
+                      <td>-0.1308</td>
+                      <td>0.052</td>
+                      <td>-2.492</td>
+                      <td class="pval">0.014</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+        
+            <p>
+                Tabel di atas (Tabel 1) menunjukkan hasil analisis model 
+                regresi linear berganda terhadap seluruh variabel 
+                yang diduga berpengaruh terhadap stress index. 
+                Model ini memiliki nilai koefisien determinasi (R² = 0.47), 
+                yang berarti sekitar 47% variasi tingkat stres pelajar 
+                dapat dijelaskan oleh variabel-variabel independen dalam model. 
+                Berdasarkan hasil analisis, diperoleh bahwa variabel peer pressure, 
+                academic pressure (home), dan academic competition memiliki pengaruh 
+                yang signifikan terhadap stress index, sementara variabel lainnya 
+                tidak menunjukkan pengaruh yang signifikan.
+            </p>
+            <p>
+                Berdasarkan hasil analisis, tekanan dari teman 
+                sebaya (peer pressure) dan tekanan akademik 
+                di rumah (academic pressure at home) memiliki 
+                pengaruh positif yang signifikan terhadap stress 
+                index. Setiap peningkatan satu satuan pada tekanan 
+                dari teman sebaya diperkirakan akan meningkatkan 
+                indeks stres sebesar 0.2786, sedangkan peningkatan 
+                satu satuan tekanan akademik di rumah akan menaikkan 
+                tingkat stres sebesar 0.1795.
+            </p>
+            <p>
+                Sementara itu, tingkat kompetisi akademik 
+                menunjukkan pengaruh paling kuat terhadap stress index (β = 1.2351), 
+                namun bersifat nonlinier. Nilai koefisien kuadratnya (β = -0.1308) 
+                mengindikasikan bahwa pada tingkat kompetisi yang sangat tinggi, 
+                pengaruhnya terhadap stres mulai menurun. Temuan ini menunjukkan bahwa 
+                kompetisi pada tingkat moderat dapat memicu stres yang bersifat produktif, 
+                sedangkan kompetisi yang terlalu tinggi justru mendorong pelajar untuk menurunkan 
+                ekspektasi atau menyesuaikan diri, sehingga tingkat stres cenderung berkurang.
+                Berdasarkan hasil analisis model regresi yang 
+                melibatkan seluruh variabel, model tersebut 
+                kemudian disederhanakan untuk meningkatkan efisiensi 
+                dan interpretabilitas dengan hanya memasukkan variabel-variabel 
+                yang terbukti signifikan. Hasil dari model regresi 
+                yang telah disederhanakan tersebut disajikan sebagai berikut:
+            </p>
+            <div class="nama_g"> <p><b>Tabel 2. </b> Hasil Analisis Regresi Faktor-Faktor signifikan yang Mempengaruhi Tingkat Stres Pelajar</p></div>
+            <div class="table-responsive">
+                <table>
+                <thead>
+                    <tr>
+                      <th>Variabel</th>
+                      <th>Coef (β)</th>
+                      <th>Std. Err</th>
+                      <th>t</th>
+                      <th>P&gt;|t|</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>const</td>
+                      <td>-0.1817</td>
+                      <td>0.544</td>
+                      <td>-0.334</td>
+                      <td>0.739</td>
+                   
+                    </tr>
+                    <tr class="significant">
+                      <td>Peer pressure</td>
+                      <td>0.2959</td>
+                      <td>0.068</td>
+                      <td>4.369</td>
+                      <td class="pval">&lt;0.001</td>
+                     
+                    </tr>
+                    <tr class="significant">
+                      <td>Academic pressure (home)</td>
+                      <td>0.1907</td>
+                      <td>0.057</td>
+                      <td>3.351</td>
+                      <td class="pval">0.001</td>
+                     
+                    </tr>
+                    <tr class="significant">
+                      <td>academic_competition</td>
+                      <td>1.1364</td>
+                      <td>0.345</td>
+                      <td>3.289</td>
+                      <td class="pval">0.001</td>
+                    
+                    </tr>
+                    <tr class="significant">
+                      <td>academic_competition^2</td>
+                      <td>-0.1188</td>
+                      <td>0.052</td>
+                      <td>-2.275</td>
+                      <td class="pval">0.024</td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Model yang ditampilkan pada Tabel 2 menghasilkan nilai koefisien determinasi (R² = 0.44), 
+                sedikit lebih rendah dibandingkan model dengan variabel lengkap. Meskipun demikian, 
+                penurunan nilai R² ini tidak dianggap merugikan karena model yang lebih sederhana 
+                cenderung lebih efisien dan mudah diinterpretasikan. Selanjutnya, model ini 
+                diuji menggunakan metode machine learning cross-validation untuk menilai sejauh mana 
+                kemampuan model dalam menyesuaikan diri terhadap data baru. Hasil pengujian tersebut disajikan sebagai berikut:
+              </p>
+
+
+              <div class="nama_g"> <p><b>Tabel 3. </b> Hasil Cross-Validation 5-Fold Model Regresi Linear Berganda dengan Variabel Signifikan</p></div>
+              <div class ="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fold</th>
+                    <th>R²</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>0.352</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>0.1791</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>0.268</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>0.5872</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>0.0314</td>
+                  </tr>
+                  <tr>
+                    <td class="average">Rata-rata</td>
+                    <td class="average">0.2839</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            <p>
+                Hasil uji cross-validation menggunakan metode 5-fold 
+                menunjukkan nilai R² pada setiap lipatan berturut-turut 
+                sebesar 0.3529, 0.1791, 0.2685, 0.5872, dan 0.0314. Nilai rata-rata R² 
+                yang diperoleh sebesar 0.2839 mengindikasikan bahwa model memiliki 
+                kemampuan prediksi yang moderat dalam menjelaskan variasi data baru. 
+                Meskipun nilai ini lebih rendah dibandingkan hasil training model (R² = 0.44), 
+                kinerja model masih dapat diterima.
+            </p>
+
+            <p>
+                Hal ini dapat dimaklumi karena data yang digunakan berasal 
+                dari hasil survei, yang sangat bergantung pada persepsi 
+                dan kondisi subjektif responden. 
+                Tidak seperti data fisiologis yang bersifat objektif dan terukur secara 
+                pasti—misalnya tekanan darah atau suhu tubuh—data berbasis persepsi, 
+                seperti tingkat stres, cenderung menunjukkan variasi yang lebih tinggi antarindividu.
+                Oleh karena itu, fluktuasi nilai R² dalam hasil cross-validation tetap dianggap wajar 
+                dan mencerminkan kompleksitas faktor psikologis yang diukur melalui kuesioner.
+            </p>
+
+            <p>
+                Secara keseluruhan, Hasil analisis menunjukkan bahwa tingkat stres pelajar 
+                dipengaruhi secara signifikan oleh faktor-faktor sosial dan akademik, 
+                khususnya tekanan dari teman sebaya, tekanan akademik di rumah, serta tingkat 
+                kompetisi akademik. Model regresi yang digunakan memiliki 
+                tingkat keandalan prediktif rata-rata sebesar 28,39% terhadap 
+                data baru, menunjukkan kemampuan yang moderat dalam menjelaskan 
+                variasi stres pelajar secara umum. Temuan ini menegaskan bahwa 
+                stres pelajar dipengaruhi oleh interaksi kompleks antara lingkungan 
+                sosial dan tuntutan akademik, sehingga upaya mitigasi stres 
+                sebaiknya mempertimbangkan kedua faktor tersebut secara bersamaan.
+            </p>
+
+
+        <div class="penutup"><h2>Referensi</h2></div>
+        <div class="penutup2"><p> <i>Artikel ini disusun berdasarkan analisis penulis terhadap data dari Academic Stress Level Dataset (Imran, 2025), 
+            yang diperoleh melalui situs Kaggle: </i></p></div>
+        <div class="penutup"><p>(https://www.kaggle.com/datasets
+          /ayeshaimran123/academic-stress-level
+          -maintenance-dataset)</p></div>
+        
+        
+    </div>
+    <div class="comment-box">
+      <h2>Komentar</h2>
+      <input type="text" id="authorInput" placeholder="Nama...">
+      <textarea id="commentInput" placeholder="Tulis komentar..."></textarea>
+      <button onclick="addComment()">Kirim</button>
+      <div id="commentList"></div>
+    </div>
+  
+  
+  <footer>
+    <p>&copy; 2025 Taris</p>
+  </footer>
+  <script src="src_dst_2/sticky_mn.js"></script>
+  <script src="src_dst_2/up_comment.js"></script>
+ 
+</body>
+</html>
+
+
