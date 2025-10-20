@@ -1,0 +1,189 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Jumbotron */
+    
+    .jumbotron {
+      width: 100%;
+      height: 50vh; /* tinggi menyesuaikan layar */
+      background: url('J1.png') no-repeat center center; /* gambar, tidak diulang, di tengah */
+      background-size: cover; /* gambar menutupi seluruh jumbotron */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-size: clamp(1.5rem, 5vw, 3.5rem);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .jumbotron .author {
+      font-size: clamp(1.5rem, 4vw, 2.5rem); /* minimum 1.5rem, ideal 4% viewport width, maksimum 2.5rem */
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .jumbotron .quote {
+      font-size: clamp(1.2rem, 3vw, 2rem); /* responsive */
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .jumbotron .translation {
+      font-size: clamp(0.9rem, 2vw, 1.2rem); /* responsive */
+      opacity: 0.8;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      position: sticky; /* nempel di atas saat scroll */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      color:white /* warna netral minimalis */
+    }
+
+    .navbar .logo span {
+      font-size: 0.7em;   /* lebih kecil dari teks utama */
+      font-weight: 400;   /* tipis agar kontras */
+      opacity: 0.7;       /* sedikit transparan */
+      margin-left: 2px;   /* beri jarak kecil */
+    }
+    .navbar .gif-icon {
+      width: 40px;      /* kecil, minimalis */
+      height: auto;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .gif-icon {
+      max-width: 30px;   /* ukuran maksimum */
+      height: auto;      /* biar proporsional */
+      animation: spin 4s linear infinite; /* tetap berputar */
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    /* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%; /* langsung di bawah navbar */
+    right: 0;
+    width: 200px;
+    margin: 0;
+    padding: 0; /* kita atur padding tiap li */
+    border-radius: 5px; /* opsional, agar rapi */
+    overflow: hidden;   /* pastikan border-radius terlihat */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* opsional */
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+    /* Konten */
+    .content {
+        padding: 40px 20px;   /* ada jarak dalam */
+        min-height: 600px;
+        background: #f4f4f4;
+        max-width: 1000px;    /* batasi lebar maksimal */
+        margin: 0 auto;       /* otomatis tengah */
+        box-sizing: border-box;
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+    }
+
+    .content h2 {
+      font-size: clamp(1rem, 1.5vw, 1.2rem); /* lebih kecil dan proporsional */
+      margin-bottom: 1rem;
+    }
+    
+    .content p {
+      font-size: clamp(0.9rem, 1.2vw, 1rem);  /* lebih compact, nyaman dibaca */
+      line-height: 1.5;  /* jarak antar baris pas */
+      margin-bottom: 1rem;
+    }
+    .menu-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 9vh;
+      flex-wrap: wrap; /* biar kalau layar kecil, turun ke bawah */
+    }
+
+    .menu-box {
+      text-decoration: none;
+      color: inherit;
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+      height: 200px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .menu-box img {
+      width: 100%;
+      height: 120px; /* contoh, sisanya untuk teks */
+      object-fit: cover; /* gambar terpotong tapi tetap penuh box */
+      border-radius: 10px;
+    }
+
+    .menu-box:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-box img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #333; /* sama dengan navbar */
+      color: white;           /* teks putih */
+      text-align: center;     /* rata tengah */
+      padding: 0.2vh 5vw;     /* jarak dalam */
+      font-size: 0.9rem;      /* sedikit lebih kecil dari konten */
+    }
+
+    footer a {
+      color: #ffd700;         /* warna link kontras (emas/kuning) */
+      text-decoration: none;
+      margin: 0 0px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;            /* berubah jadi putih saat hover */
+    }
+   
